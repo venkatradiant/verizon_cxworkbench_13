@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ThemeToggle } from './ThemeToggle';
-import profileImg from "figma:asset/2da4c7e145b269783f815ba4a524273a056f5d19.png";
+import profileImg from "https://cdn.iconscout.com/icon/free/png-512/free-avatar-icon-svg-download-png-456322.png";
 
 const navItems = [
   { path: '/playground', label: 'Dashboard', icon: Sparkles, description: 'Explore & Create' },
