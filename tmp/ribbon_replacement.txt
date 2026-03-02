@@ -1,0 +1,85 @@
+// This is a temporary file to show the ribbon code that needs to be inserted
+
+// Replace lines 2899-2923 with this:
+
+            {/* Primary CTA - Start with Data Layer */}
+            {!isRightPanelCollapsed && activeTab === 'dataLayer' && (
+              <div className="bg-blue-50/80 border-b border-blue-200 px-6 py-4 shrink-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <Database size={20} className="text-blue-600" strokeWidth={2.5} />
+                    <div className="flex flex-col">
+                      <span className="text-[15px] font-black text-blue-900">
+                        Review Data Layer
+                      </span>
+                      <span className="text-[12px] text-blue-700">
+                        Start by reviewing variables and page metadata
+                      </span>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setActiveTab('userInteractions')}
+                    className="px-4 py-2 bg-white hover:bg-blue-50 text-blue-600 hover:text-blue-700 rounded-lg text-[12px] font-bold transition-all shadow-sm flex items-center gap-2"
+                  >
+                    Continue
+                    <ArrowRight size={16} strokeWidth={2.5} />
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* User Interactions CTA */}
+            {!isRightPanelCollapsed && activeTab === 'userInteractions' && (
+              <div className="bg-purple-50/80 border-b border-purple-200 px-6 py-4 shrink-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <MousePointer2 size={20} className="text-purple-600" strokeWidth={2.5} />
+                    <div className="flex flex-col">
+                      <span className="text-[15px] font-black text-purple-900">
+                        Review User Interactions
+                      </span>
+                      <span className="text-[12px] text-purple-700">
+                        Validate click events, form interactions, and user actions
+                      </span>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setActiveTab('systemEvents')}
+                    className="px-4 py-2 bg-white hover:bg-purple-50 text-purple-600 hover:text-purple-700 rounded-lg text-[12px] font-bold transition-all shadow-sm flex items-center gap-2"
+                  >
+                    Continue
+                    <ArrowRight size={16} strokeWidth={2.5} />
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* System Events CTA */}
+            {!isRightPanelCollapsed && activeTab === 'systemEvents' && (
+              <div className="bg-emerald-50/80 border-b border-emerald-200 px-6 py-4 shrink-0">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <Activity size={20} className="text-emerald-600" strokeWidth={2.5} />
+                    <div className="flex flex-col">
+                      <span className="text-[15px] font-black text-emerald-900">
+                        Review System Events
+                      </span>
+                      <span className="text-[12px] text-emerald-700">
+                        Verify automated events and system-triggered analytics
+                      </span>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => {
+                      toast.success('Review Complete', {
+                        description: 'All tracking definitions have been reviewed.',
+                      });
+                    }}
+                    className="px-4 py-2 bg-white hover:bg-emerald-50 text-emerald-600 hover:text-emerald-700 rounded-lg text-[12px] font-bold transition-all shadow-sm flex items-center gap-2"
+                  >
+                    <CheckCircle2 size={16} strokeWidth={2.5} />
+                    Complete Review
+                  </button>
+                </div>
+              </div>
+            )}

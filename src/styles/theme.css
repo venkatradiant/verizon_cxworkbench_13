@@ -1,0 +1,176 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* Color Tokens - Light Mode */
+  --background: #ffffff;
+  --foreground: #18181b;
+  
+  --card: #ffffff;
+  --card-foreground: #18181b;
+  
+  --surface-primary: #fafafa;
+  --surface-secondary: #f4f4f5;
+  --surface-tertiary: #efeff1;
+  
+  --muted: #f4f4f5;
+  --muted-foreground: #52525b;
+  
+  --accent: #e63946; /* Softer, warmer red/coral */
+  --accent-foreground: #ffffff;
+  --accent-soft: #fff1f2;
+  
+  --border: #e4e4e7;
+  --border-subtle: #f4f4f5;
+  --border-default: var(--border);
+  
+  --text-primary: var(--foreground);
+  --text-secondary: var(--muted-foreground);
+  --text-tertiary: #a1a1aa;
+  
+  --input: #ffffff;
+  --ring: rgba(230, 57, 70, 0.5);
+
+  /* Status Tokens */
+  --status-success-bg: #f0fdf4;
+  --status-success-text: #166534;
+  --status-warning-bg: #fffbeb;
+  --status-warning-text: #92400e;
+  --status-error-bg: #fef2f2;
+  --status-error-text: #991b1b;
+  
+  /* Brand Specifics */
+  --brand-red: #EE0000;
+  --brand-black: #000000;
+
+  /* Radii */
+  --radius-card: 8px; 
+  --radius-badge: 6px;
+  --radius-button: 8px;
+}
+
+.dark {
+  /* Color Tokens - Dark Mode */
+  --background: #09090b;
+  --foreground: #f4f4f5;
+  
+  --card: #09090b;
+  --card-foreground: #f4f4f5;
+  
+  --surface-primary: #121216;
+  --surface-secondary: #18181b;
+  --surface-tertiary: #27272a;
+  
+  --muted: #18181b;
+  --muted-foreground: #a1a1aa;
+  
+  --accent: #ee0000; /* Vibrant Verizon Red in Dark Mode */
+  --accent-foreground: #ffffff;
+  --accent-soft: rgba(238, 0, 0, 0.1);
+  
+  --border: #27272a;
+  --border-subtle: #18181b;
+  --border-default: var(--border);
+  
+  --text-primary: var(--foreground);
+  --text-secondary: var(--muted-foreground);
+  --text-tertiary: #71717a;
+  
+  --input: #09090b;
+  --ring: rgba(238, 0, 0, 0.5);
+
+  /* Status Tokens - Dark Mode Adjustments */
+  --status-success-bg: rgba(22, 101, 52, 0.1);
+  --status-success-text: #4ade80;
+  --status-warning-bg: rgba(146, 64, 14, 0.1);
+  --status-warning-text: #fbbf24;
+  --status-error-bg: rgba(153, 27, 27, 0.1);
+  --status-error-text: #f87171;
+  
+  /* Brand Specifics */
+  --brand-red: #EE0000;
+  --brand-black: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-surface-primary: var(--surface-primary);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-tertiary: var(--surface-tertiary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-soft: var(--accent-soft);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --radius-card: var(--radius-card);
+  --radius-badge: var(--radius-badge);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased transition-colors duration-300;
+  }
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    @apply text-foreground;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-foreground;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-foreground;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  h4 {
+    @apply text-foreground;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  p {
+    @apply text-muted-foreground;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  label, .text-meta {
+    @apply text-muted-foreground;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+}
