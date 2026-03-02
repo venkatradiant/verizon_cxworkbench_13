@@ -39,6 +39,7 @@ import { useParams, useNavigate, useLocation } from 'react-router';
 import { mockJourneys, Journey, JourneyStep } from '@/app/data/mockJourneys';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { toast } from 'sonner';
+const profileImg = "https://cdn.iconscout.com/icon/free/png-512/free-avatar-icon-svg-download-png-456322.png";
 
 
 interface Message {
