@@ -3,12 +3,12 @@ import { useParams, useNavigate } from 'react-router';
 import { mockJiraTickets } from '@/app/data/mockJiraTickets';
 
 // Import Figma screenshot assets
-import supportLandingScreen from "https://fun-bask-07334501.figma.site/_assets/v11/f1c7eaf8aab4ce8e753abccc42093a384a54ad02.png";
-import inquiryCategoryScreen from "https://fun-bask-07334501.figma.site/_assets/v11/10f3a4641b96c8c9bb0f35c8a54bd6f0b9682b76.png";
-import accountAccessScreen from "https://fun-bask-07334501.figma.site/_assets/v11/f84e6e8b34b0a7cc1dc322aae8179f1d138938db.png";
-import agentInteractionScreen from "https://fun-bask-07334501.figma.site/_assets/v11/f3fc61966c4bb8c6652f237b4ecbd60abb243106.png";
-import resolutionSummaryScreen from "https://fun-bask-07334501.figma.site/_assets/v11/e6ed5747babf8908074fb30c886b8b3283c8cae3.png";
-import customerSurveyScreen from "https://fun-bask-07334501.figma.site/_assets/v11/10f3a4641b96c8c9bb0f35c8a54bd6f0b9682b76.png";
+import supportLandingScreen from "../../assets/1.png";
+import inquiryCategoryScreen from "../../assets/2.png";
+import accountAccessScreen from "../../assets/3.png";
+import agentInteractionScreen from "../../assets/4.png";
+import resolutionSummaryScreen from "../../assets/5.png";
+import customerSurveyScreen from "../../assets/6.png";
 
 import { 
   ArrowLeft, 
