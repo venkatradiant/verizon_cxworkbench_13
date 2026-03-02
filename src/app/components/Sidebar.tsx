@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import { clsx } from 'clsx';
+const profileImg = "https://cdn.iconscout.com/icon/free/png-512/free-avatar-icon-svg-download-png-456322.png";
 import { 
   Sparkles, 
   Layers,
