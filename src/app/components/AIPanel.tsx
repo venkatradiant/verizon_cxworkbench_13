@@ -39,7 +39,7 @@ import { useParams, useNavigate, useLocation } from 'react-router';
 import { mockJourneys, Journey, JourneyStep } from '@/app/data/mockJourneys';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { toast } from 'sonner';
-import profileImg from "figma:asset/2da4c7e145b269783f815ba4a524273a056f5d19.png";
+
 
 interface Message {
   id: string;
