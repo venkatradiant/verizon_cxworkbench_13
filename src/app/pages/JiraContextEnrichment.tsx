@@ -5,10 +5,10 @@ import { mockJiraTickets } from '@/app/data/mockJiraTickets';
 // Import Figma screenshot assets
 import supportLandingScreen from "../../assets/1.png";
 import inquiryCategoryScreen from "../../assets/2.png";
-import accountAccessScreen from "../../assets/3.png";
+import accountAccessScreen from "../../assets/6.png";
 import agentInteractionScreen from "../../assets/4.png";
 import resolutionSummaryScreen from "../../assets/5.png";
-import customerSurveyScreen from "../../assets/6.png";
+import customerSurveyScreen from "../../assets/3.png";
 
 import { 
   ArrowLeft, 
